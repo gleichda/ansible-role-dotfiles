@@ -1,17 +1,17 @@
 ---
 # vars file for ansible-role-dotfiles
 dotfiles_repo_url: https://github.com/Allaman/dotfiles.git
-dotfiles_path: "{{ ansible_env.HOME }}/workspace/github.com/allaman/public-dotfiles"
+dotfiles_path: "{{ ansible_env.HOME }}/workspace/github.com/gleichda/public-dotfiles"
 excluded_files:
   - README.md
   - LICENSE
   - screenshot.png
 gitconfig:
-  name: Michael
-  username: allaman
-  mail: michaeljohannpeter@gmail.com
+  name: David Gleich
+  username: gleichda
+  mail: david@familie-gleich.de
   # This will store your git credential in plaintext !
   credential_cache: true
   credential_cache_timeout: 3600
   delta: true
-  neovim_remote: true
+  neovim_remote: false
